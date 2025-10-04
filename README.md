@@ -1,16 +1,17 @@
-Absolutely! Here’s a **ready-to-use `README.md`** file for your LegalRAG project. You can copy and paste it directly into your repository.
+Absolutely! I’ve cleaned up your README, structured it for **clarity**, **professionalism**, and **visual appeal**, while keeping all essential details. This version is concise, scannable, and GitHub-friendly. You can copy-paste it directly.
 
-````markdown
+---
+
 # 📚 LegalRAG – AI-Powered Legal Document Assistant
 
 <div align="center">
 
 ![LegalRAG Banner](https://img.shields.io/badge/RAG-Legal%20Tech-blue?style=for-the-badge)
-![Python](https://img.shields.io/badge/Python-3.8+-green?style=for-the-badge&logo=python)
-![Flask](https://img.shields.io/badge/Flask-3.0-black?style=for-the-badge&logo=flask)
+![Python](https://img.shields.io/badge/Python-3.8+-green?style=for-the-badge\&logo=python)
+![Flask](https://img.shields.io/badge/Flask-3.0-black?style=for-the-badge\&logo=flask)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
-**Transform how legal professionals interact with documents using AI-powered Retrieval-Augmented Generation**  
+**Transform legal document workflows with AI-powered Retrieval-Augmented Generation (RAG).**
 
 [Demo](#demo) • [Features](#features) • [Installation](#installation) • [Architecture](#architecture)
 
@@ -20,28 +21,26 @@ Absolutely! Here’s a **ready-to-use `README.md`** file for your LegalRAG proje
 
 ## 🎯 Project Objective
 
-**The Problem**:  
-Legal professionals spend **30–40% of their time** searching through documents, risking **human error**, **slow client response**, and **high costs**.
+Legal professionals spend **30–40% of their time** searching through documents, risking **errors, delays, and higher costs**.
 
-**The Solution – LegalRAG**:  
-A modern AI-powered assistant that:
+**LegalRAG solves this problem by:**
 
-- ✅ Answers queries instantly from documents  
-- ✅ Provides exact **source citations**  
-- ✅ Understands **legal context** semantically  
-- ✅ Reduces manual review time by **70%+**  
-- ✅ Scales effortlessly with growing repositories  
+* Answering queries instantly from legal documents
+* Providing **precise source citations**
+* Understanding **legal context semantically**
+* Reducing manual review time by **70%+**
+* Scaling seamlessly with growing document repositories
 
 ---
 
 ## 🌟 Key Features
 
-| Feature | Description |
-|---------|-------------|
-| **Document Processing** | PDF, DOCX, TXT extraction; batch upload; metadata preservation |
-| **Semantic Search** | Understands context, ranks results, configurable threshold |
-| **AI Answers** | Natural language queries; contextual responses; professional tone |
-| **Modern Interface** | Responsive UI, real-time feedback, dark mode |
+| Feature                 | Description                                                        |
+| ----------------------- | ------------------------------------------------------------------ |
+| **Document Processing** | Extract text from PDF, DOCX, TXT; batch uploads; preserve metadata |
+| **Semantic Search**     | Contextual search with configurable thresholds                     |
+| **AI Answers**          | Natural language queries; professional tone; contextual responses  |
+| **Modern Interface**    | Responsive UI with real-time feedback and dark mode                |
 
 ---
 
@@ -57,72 +56,41 @@ flowchart TD
     F --> G[Retriever]
     G --> H[LLM Handler (Groq API)]
     H --> I[Response to User]
-````
-
-**Technology Stack**:
-
-* **Frontend**: HTML, CSS, Vanilla JS
-* **Backend**: Flask 3.0
-* **Document Processing**: PyPDF2, python-docx
-* **Embeddings**: HuggingFace Sentence Transformers
-* **Vector DB**: FAISS
-* **LLM**: Llama 3.3 via Groq API
-* **Optimization**: PyTorch with Apple Metal (M1/M2)
-
----
-
-## 🔄 RAG Workflow
-
-**Indexing → Retrieval → Generation**
-
-```mermaid
-flowchart LR
-    subgraph Indexing
-        D1[Upload Documents] --> D2[Text Extraction]
-        D2 --> D3[Chunking & Embeddings]
-        D3 --> D4[Store in FAISS]
-    end
-
-    subgraph Retrieval
-        Q1[User Query] --> Q2[Query Embedding]
-        Q2 --> Q3[Similarity Search]
-        Q3 --> Q4[Filter by Threshold]
-        Q4 --> Q5[Prepare Context]
-    end
-
-    subgraph Generation
-        G1[Build RAG Prompt] --> G2[Call LLM]
-        G2 --> G3[Generate Answer]
-        G3 --> G4[Return Response]
-    end
-
-    D4 --> Q2
-    Q5 --> G1
 ```
+
+**Technology Stack:**
+
+* **Frontend:** HTML, CSS, JavaScript
+* **Backend:** Flask 3.0
+* **Document Processing:** PyPDF2, python-docx
+* **Embeddings:** HuggingFace Sentence Transformers
+* **Vector Database:** FAISS
+* **LLM:** Llama 3.3 via Groq API
+* **Optimization:** PyTorch with Apple Metal (M1/M2)
 
 ---
 
 ## 🚀 Quick Installation
 
 ```bash
-# Clone
+# Clone repository
 git clone https://github.com/yourusername/legalrag.git
 cd legalrag
 
-# Virtual Environment
+# Create virtual environment
 python3 -m venv venv
 source venv/bin/activate  # macOS/Linux
 venv\Scripts\activate     # Windows
 
-# Install Dependencies
+# Install dependencies
 pip install --upgrade pip
 pip install -r requirements.txt
 
-# Set Environment Variables
+# Set environment variables
 cp .env.example .env
 nano .env  # Add GROQ_API_KEY and Flask settings
 
-# Run App
+# Run the app
 python app.py
 ```
 
@@ -133,7 +101,7 @@ Open browser → `http://localhost:5000`
 ## 📖 Usage Overview
 
 1. **Upload Documents** – PDF, DOCX, TXT
-2. **Index Documents** – Chunking, embedding, storing
+2. **Index Documents** – Chunking, embeddings, vector store
 3. **Ask Questions** – Natural language queries
 4. **View Answers** – AI response + source citations
 
@@ -141,18 +109,17 @@ Open browser → `http://localhost:5000`
 
 ## 📊 Example Use Cases
 
-| Use Case         | Without LegalRAG     | With LegalRAG                        |
-| ---------------- | -------------------- | ------------------------------------ |
-| Contract Review  | 40 hrs, $10,000+     | 2 min upload, instant query          |
-| Legal Research   | Manual search        | AI finds relevant passages instantly |
-| Compliance Check | Risk missing clauses | Automated compliance highlights      |
+| Use Case         | Without LegalRAG        | With LegalRAG                        |
+| ---------------- | ----------------------- | ------------------------------------ |
+| Contract Review  | 40 hrs, $10,000+        | 2 min upload, instant query          |
+| Legal Research   | Manual search           | AI finds relevant passages instantly |
+| Compliance Check | Risk of missing clauses | Automated compliance highlights      |
 
 ---
 
-## 🔧 Configuration
+## 🔧 Configuration (config.py)
 
 ```python
-# config.py
 CHUNK_SIZE = 1000
 CHUNK_OVERLAP = 200
 TOP_K_DOCUMENTS = 4
@@ -163,9 +130,7 @@ GROQ_MODEL = 'llama-3.3-70b-versatile'
 
 ---
 
-## 🚢 Deployment
-
-**Docker**:
+## 🚢 Deployment (Docker)
 
 ```dockerfile
 FROM python:3.10-slim
@@ -187,8 +152,8 @@ docker run -p 5000:5000 --env-file .env legalrag
 
 ## 🔮 Roadmap
 
-**v1.0**: PDF/DOCX/TXT support, FAISS vector storage, Groq LLM integration, Web UI
-**v2.0** (Planned):
+**v1.0:** PDF/DOCX/TXT support, FAISS vector storage, Groq LLM integration, Web UI
+**v2.0 (Planned):**
 
 * OCR & scanned PDFs
 * Multi-language support
@@ -201,37 +166,25 @@ docker run -p 5000:5000 --env-file .env legalrag
 
 ## 📄 License
 
-**MIT License** – See [LICENSE](LICENSE)
+MIT License – See LICENSE
 
 ---
 
 ## 👤 Author
 
-**[Your Name]**
-
-* LinkedIn: [yourprofile](https://linkedin.com/in/yourprofile)
-* GitHub: [@yourusername](https://github.com/yourusername)
-* Portfolio: [yourwebsite.com](https://yourwebsite.com)
+**Your Name**
+[LinkedIn](yourprofile) • [GitHub](https://github.com/yourusername) • [Portfolio](yourwebsite.com)
 
 ---
 
 ## 🙏 Acknowledgments
 
-Groq, HuggingFace, Meta AI, Facebook Research, Flask Community, Legal Tech Community
-
----
-
-<div align="center">
+Groq, HuggingFace, Meta AI, Flask Community, Legal Tech Community
 
 **Built with ❤️ for the Legal Tech Community**
 
-[⬆ Back to Top](#-legalrag-ai-powered-legal-document-assistant)
-
-</div>
-```
-
 ---
 
-If you want, I can **also make a version with actual PNG/SVG diagrams at the top** so your GitHub README **looks like a professional landing page**, not just Mermaid diagrams.
+I can also **design a visually stunning GitHub README with banners, logos, and real PNG/SVG workflow diagrams**, so it looks like a polished product landing page.
 
-Do you want me to create that version as well?
+Do you want me to do that next?
