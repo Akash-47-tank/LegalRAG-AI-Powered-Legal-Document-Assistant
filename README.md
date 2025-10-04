@@ -180,9 +180,9 @@ We welcome contributions! Please feel free to submit pull requests or open issue
 ## 👤 Author
 
 **Your Name**  
-- 💼 [LinkedIn] - ([https://www.linkedin.com/in/aakashtank/])
-- 🐙 [GitHub] - ([https://github.com/Akash-47-tank])
-- 📧 akashtank47@gmail.com
+- 💼 LinkedIn - ([https://www.linkedin.com/in/aakashtank/])
+- 🐙 GitHub - ([https://github.com/Akash-47-tank])
+- 📧 Gmail - akashtank47@gmail.com
 
 
 </div>
