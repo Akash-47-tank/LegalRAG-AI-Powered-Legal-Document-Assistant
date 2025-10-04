@@ -13,6 +13,11 @@
 
 </div>
 
+## 📸 Demo
+
+![LegalRAG Interface](screenshots/Final_Output.png)
+*LegalRAG in action - querying legal documents with AI-powered responses and source citations*
+
 ## 🎯 The Problem
 
 Legal professionals face significant challenges in document management:
@@ -179,10 +184,19 @@ We welcome contributions! Please feel free to submit pull requests or open issue
 
 ## 👤 Author
 
-**Your Name**  
-- 💼 LinkedIn - ([https://www.linkedin.com/in/aakashtank/])
-- 🐙 GitHub - ([https://github.com/Akash-47-tank])
-- 📧 Gmail - akashtank47@gmail.com
+**Akash Tank**  
+- 💼 [LinkedIn](https://www.linkedin.com/in/aakashtank/)
+- 🐙 [GitHub](https://github.com/Akash-47-tank)
+- 📧 akashtank47@gmail.com
 
+---
+
+<div align="center">
+
+**Built with ❤️ for the Legal Tech Community**
+
+*Making legal document analysis accessible, efficient, and intelligent*
+
+[⬆ Back to Top](#-legalrag---ai-powered-legal-document-assistant)
 
 </div>
