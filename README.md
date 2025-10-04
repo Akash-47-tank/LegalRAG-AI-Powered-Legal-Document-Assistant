@@ -88,7 +88,7 @@ sequenceDiagram
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/legalrag.git
+git clone https://github.com/Akash-47-tank/LegalRAG-AI-Powered-Legal-Document-Assistant.git
 cd legalrag
 
 # Create virtual environment
@@ -180,25 +180,9 @@ We welcome contributions! Please feel free to submit pull requests or open issue
 ## 👤 Author
 
 **Your Name**  
-- 💼 [LinkedIn](https://linkedin.com/in/yourprofile)  
-- 🐙 [GitHub](https://github.com/yourusername)  
-- 📧 your.email@example.com
+- 💼 [LinkedIn]([https://www.linkedin.com/in/aakashtank/))  
+- 🐙 [GitHub]([https://github.com/yourusername](https://github.com/Akash-47-tank))  
+- 📧 akashtank47@gmail.com
 
-## 🙏 Acknowledgments
-
-- **Groq** for fast LLM inference
-- **HuggingFace** for embedding models
-- **Meta AI** for Llama 3.3 model
-- **Facebook Research** for FAISS
-
----
-
-<div align="center">
-
-**Built with ❤️ for the Legal Tech Community**
-
-*Making legal document analysis accessible, efficient, and intelligent*
-
-[⬆ Back to Top](#-legalrag---ai-powered-legal-document-assistant)
 
 </div>
