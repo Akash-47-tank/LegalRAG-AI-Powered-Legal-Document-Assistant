@@ -17,7 +17,7 @@
 
 ## 📸 Demo
 
-![LegalRAG Application Screenshot](screenshots/Final_output.png)
+![LegalRAG Application Screenshot](screenshots/Final_Output.png)
 *LegalRAG in action - querying legal documents with AI-powered responses and source citations*
 
 ---
